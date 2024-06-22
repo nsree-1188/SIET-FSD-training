@@ -1,0 +1,43 @@
+<html>
+
+<body>
+    <h1>Travel Reservation form</h1>
+    <p><b>* denotes mandatory</b></p>
+    <form method="GET">
+        <div style="justify-content: space-around;">
+            Full name* <br>
+            <input type="text" id="name" name="name" placeholder="Firstname Lastname" required /><br>
+
+            Email address*<br>
+            <input type="email" id="email" name="email" placeholder="Email Address" required /><br>
+
+            <label for="tour">Select Tour Package* </label><br>
+            <select>
+                <option id="tour" value="Goa">Goa</option>
+            </select><br>
+
+            Arrival Date*<br>
+            <input type="date" id="aDate" name="aDate" required /><br>
+
+            Number of persons* <br>
+            <input type="number" id="person" name="person" placeholder="Number of Person" /><br>
+
+            <label for="avail"> Would you want to avail</label><br>
+            <input type="checkbox" id="avail" name="avail" value="Boarding" />Boarding<br>
+            <input type="checkbox" id="avail" name="avail" value="Fooding" />Fooding<br>
+            <input type="checkbox" id="avail" name="avail" value="Sight Seeing" />Sight Seeing<br>
+
+            Discount Coupon code:<br>
+            <input type="text" id="coupon" name="coupon" placeholder="Coupon Code" /><br>
+
+            <label for="terms"> Terms and Conditions* </label><br>
+            <input type="radio" id="terms" name="terms" value="agree" />I agree
+            <input type="radio" id="terms" name="terms" value="disagree" />I disagree<br>
+            
+            <input type="submit" value="Complete reservation" />
+
+        </div>
+    </form>
+</body>
+
+</html>

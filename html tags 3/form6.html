@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <style>
+            table, th {
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 10px
+            }
+        </style>
+    </head>
+    <body>
+        <table border>
+            <thead>
+                <tr>
+                    <th colspan="2">Pizza Shop 2.0</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Name</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th rowspan="3">Pizza Topping</th>
+                    <td><input type="radio">Supreme</td>
+                </tr>
+                <tr>
+                    <td><input type="radio">Vegetarian</td>
+                </tr>
+                <tr>
+                    <td><input type="radio">Hawaiian</td>
+                </tr>
+                <tr>
+                    <th>Pizza Sauce</th>
+                    <td>
+                        <select>
+                            <option>Tomato</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Optional Extras</th>
+                    <td><input type="checkbox">Extra choice <input type="checkbox">Gluten Free</td>
+                </tr>
+                <tr>
+                    <th>Delivery Instruction</th>
+                    <td><textarea cols="30" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <th colspan="2"><input type="button" value="Send my Order"></th>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Validate input data</title>
+</head>
+
+<body>
+    <p>Enter the perc:</p>
+    <input id="perc">
+    <button type="button" onclick="validate()">Submit</button>
+    <p id="text"></p>
+
+    <script>
+        function validate() {
+            var perc = parseFloat(document.getElementById('perc').value);
+            var resT, resC;
+            if (perc >= 80 && perc <= 100) {
+                resT = "Best";
+                resC = "green";
+            } else if (perc >= 60 && perc <= 79) {
+                resT = "Good";
+                resC = "blue";
+            } else if (perc >= 50 && perc <= 59) {
+                resT = "Better";
+                resC = "orange";
+            } else if (perc < 50) {
+                resT = "Not Eligible";
+                resC = "red";
+            } else {
+                resT = "Invalid input";
+                resC = "black";
+            }
+            var res = document.getElementById('text');
+            res.innerText = resT;
+            res.style.color = resC;
+        }
+    </script>
+</body>
+
+</html>
